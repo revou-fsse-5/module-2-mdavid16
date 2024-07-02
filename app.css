@@ -201,3 +201,35 @@ img.grid {
       transform: translateY(-20px);
     }
   }  
+
+  .dogcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+      "dogfood cleandog kandang"
+      "dogfood tali toy";
+  }
+
+  .dogfood {
+    grid-area: dogfood;
+  }
+
+  .cleandog {
+    grid-area: cleandog;
+  }
+
+  .kandang {
+    grid-area: kandang;
+  }
+
+  .tali {
+    grid-area: tali;
+  }
+
+  .toy {
+    grid-area: toy;
+  }
